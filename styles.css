@@ -1,0 +1,116 @@
+/* reset browser default styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+/* setting colors for fonts */
+body,
+#menuItems,
+button{
+  color: white;
+}
+/* responsive font sizing */
+h1 {
+  font-size: minmax(1em, 3em);
+}
+h2 {
+  font-size: min(max(16px, 4vw), 22px);
+}
+/* body styles */
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(123, 44, 191);
+}
+/* each block has a rounded edge, as well as a dimmer tint */
+.block {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: rgb(0, 0, 0, 0.3);
+}
+/* side menu styling */
+.menu {
+  border-radius: 15px 15px 15px 15px;
+  grid-area: menu;
+  background-color: rgb(60, 9, 108);
+  padding: 2rem;
+  min-width: 50px;
+}
+/* padding for list items */
+li {
+  padding-top: 3rem;
+}
+/* modifying the search bar at the top of the screen */
+.search {
+  width: 50rem;
+  height: 2rem;
+  border-radius: 15px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+/* formatting the items on the menu */
+#menuItems {
+  display: block;
+  margin-top: 10em;
+}
+
+/* calendar block */
+.calendar {
+  grid-area: calendar;
+}
+
+/* Button for creating a new input */
+button {
+  background: rgb(199, 125, 255);
+  position: relative;
+
+  border-radius: 5px;
+  float: right;
+  width: 6rem;
+  height: 3rem;
+}
+/* colour changes when the button is hovered over */
+button:hover {
+  background-color: rgb(60, 9, 108);
+}
+/* or clicked */
+button:active {
+  background-color: rgb(123, 44, 191);
+}
+
+/* resize the placeholder image */
+.resize {
+  width: 50em;
+  height: 30em;
+}
+
+/* header block with search bar */
+.header {
+  grid-area: header;
+}
+
+/* wrap around entire page content */
+.Wrapper {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+/* Organising the layout for desktop with the columns and rows */
+.dash {
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 70px 1fr;
+
+  grid-template-areas:
+    "menu header"
+    "menu calendar"
+}
+
+

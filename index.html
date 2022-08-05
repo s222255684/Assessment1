@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- title -->
+    <title>Online Planner</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dash Wrapper">
+        <!-- side menu -->
+        <div class="menu">
+            <!-- title in menu  -->
+            <h2>Planner Pro (working title)</h2>
+            <!-- items in menu -->
+            <div id="menuItems">
+                <li>Home</li>
+                <li>Schedule</li>
+                <li>About</li>
+                <li>Contact</li>
+            </div>
+        </div>
+
+        <!-- search block -->
+        <div class="header block">
+            <input class="search" type="text" placeholder="Search"></a></li>
+        </div>
+        <!-- calendar block -->
+        <div class="calendar block">
+            <!-- Greeting text relevant to time of day -->
+            <h2>Insert appropriate greeting (morning afternoon evening) + Name</h2>
+            <!-- button to add new item to calendar -->
+            <button v-on:click="create">Add New Task</button>
+            <!-- placeholder image as i could not create a working calendar in time for this showcase -->
+            <img class="resize" src="calendar_placeholder.png" alt="Picture of calender">
+            <h2>Tasks nearing their due date:</h2>
+        </div>
+    </div>
+</body>
+
+</html>
